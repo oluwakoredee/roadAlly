@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body class="overflow-hidden">
+    <div class="flex pl-2 mt-5 items-center flex-row">
+      <img
+        src="https://res.cloudinary.com/demmasgzp/image/upload/v1723113428/Road%20Ally/angle-left_rkjbju.png"
+        class="h-[24px]"
+        alt=""
+      />
+      <p class="text-[16px]">Back</p>
+    </div>
+    <h1
+      class="font-normal flex pl-3 text-[24px] pr-14 my-10 leading-7 text-[#414141]"
+    >
+      Sign in with your email
+    </h1>
+    <input
+      placeholder="Email or Phone Number"
+      {...field}
+      type="text"
+      class="px-2 flex text-[#D0D0D0] font-medium overflow-x-hidden justify-center text-[16px] bg-transparent mx-3 mt-6 rounded-md shadow-sm w-[93%] h-[60px] border border-gray-300"
+    />
+    <!-- Password Input with Placeholder Button for Visibility Toggle -->
+    <div class="relative mb-3">
+      <input
+        disabled="{loading}"
+        placeholder="Enter Your Password"
+        {...field}
+        type="text"
+        class="px-2 flex mb-3 overflow-x-hidden font-medium text-[#D0D0D0] justify-center text-[16px] bg-transparent mx-3 mt-4 rounded-md shadow-sm w-[93%] h-[60px] border border-gray-300"
+      />
+      <div
+        class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5 text-gray-600 mr-3"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 12a3 3 0 11-6 0 3 3 0 016 0zm6 0c0 5.25-8 9-8 9s-8-3.75-8-9 8-9 8-9 8 3.75 8 9z"
+          />
+        </svg>
+      </div>
+    </div>
+    <a href="#">
+      <p
+        class="mb-9 flex justify-end text-[#F44336] text-[14px] font-medium pr-4"
+      >
+        Forget password?
+      </p>
+    </a>
+
+    <!-- Submit Button -->
+    <div class="flex justify-center">
+      <button
+        type="submit"
+        class="w-[90%] font-medium py-2 px-4 bg-red-600 text-white font-bold rounded-lg flex justify-center"
+      >
+        Sign In
+      </button>
+    </div>
+    <div class="bg-white p-6 rounded-lg w-full max-w-sm">
+      <div class="text-center text-gray-600 mb-4">or</div>
+      <div class="flex flex-col space-y-4">
+        <button
+          class="flex items-center h-[60px] justify-center p-3 border border-gray-300 rounded-lg hover:bg-gray-50"
+        >
+          <img
+            src="https://www.gstatic.com/images/branding/product/1x/gmail_2020q4_48dp.png"
+            alt="Gmail"
+            class="w-6 h-6 mr-2"
+          />
+          <span class="text-gray-700 font-medium">Sign up with Gmail</span>
+        </button>
+
+        <button
+          class="flex items-center h-[60px] justify-center p-3 border border-gray-300 rounded-lg hover:bg-gray-50"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+            alt="Facebook"
+            class="w-6 h-6 mr-2"
+          />
+          <span class="text-gray-700 font-medium">Sign up with Facebook</span>
+        </button>
+      </div>
+      <div class="text-center mt-6 text-gray-600">
+        Don’t have an account?
+        <a href="/signup.html" class="text-red-600 font-medium">Sign Up</a>
+      </div>
+    </div>
+  </body>
+</html>
