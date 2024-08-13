@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body class="overflow-hidden flex flex-col gap-5">
+    <div
+      class="flex items-center text-center text-[#414141] gap-[95px] justify-start"
+    >
+      <div class="flex pl-2 mt-5 items-center flex-row">
+        <img
+          src="https://res.cloudinary.com/demmasgzp/image/upload/v1723113428/Road%20Ally/angle-left_rkjbju.png"
+          class="h-[24px]"
+          alt=""
+        />
+        <a href="/signup.html">
+          <p class="text-[16px]">Back</p>
+        </a>
+      </div>
+      <p class="mt-4 text-[#414141]">Profile</p>
+    </div>
+
+    <div class="flex justify-center relative">
+        <img src="" class="bg-[#D0D0D0] h-[121px] w-[121px] rounded-full" alt="">
+        <img src="https://res.cloudinary.com/demmasgzp/image/upload/v1723507310/Road%20Ally/camera_gdm49g.png" class=" absolute w-[23px] rounded-full bottom-0 right-[140px] h-[23px] z-10" alt="">
+    </div>
+
+    <input
+      placeholder="Full Name"
+      {...field}
+      type="text"
+      class="px-2 flex text-[#D0D0D0] font-medium overflow-x-hidden justify-center text-[16px] bg-transparent mx-3 mt-6 rounded-md shadow-sm w-[93%] h-[60px] border border-gray-300"
+    />
+    <!-- Country Code and Mobile Number Input -->
+    <div class="flex mx-3">
+      <div class="relative w-1/3">
+        <select
+          class="block appearance-none w-full bg-white border border-gray-300 p-4 rounded-l-lg leading-tight focus:outline-none focus:ring-blue-500"
+        >
+          <option value="+1" selected>🇺🇸 +1</option>
+          <option value="+91">🇳🇬 +234</option>
+          <option value="+44">🇬🇧 +44</option>
+          <option value="+91">🇮🇳 +91</option>
+          <!-- Add more countries as needed -->
+        </select>
+      </div>
+      <input
+        type="text"
+        placeholder="Your mobile number"
+        class="w-2/3 p-3 border border-l-0 border-gray-300 rounded-r-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+    </div>
+    <input
+      placeholder="Email"
+      {...field}
+      type="text"
+      class="px-2 flex text-[#D0D0D0] font-medium overflow-x-hidden justify-center text-[16px] bg-transparent mx-3 rounded-md shadow-sm w-[93%] h-[60px] border border-gray-300"
+    />
+    <input
+      placeholder="Street"
+      {...field}
+      type="text"
+      class="px-2 flex text-[#D0D0D0] font-medium overflow-x-hidden justify-center text-[16px] bg-transparent mx-3 mt-1 rounded-md shadow-sm w-[93%] h-[60px] border border-gray-300"
+    />
+    <!-- Gender -->
+    <div class="px-3">
+      <select
+        class="w-full h-[60px] px-3 py-2 border border-gray-300 text-[#D0D0D0] bg-transparent rounded-md shadow-sm focus:outline-none"
+        id="gender"
+        required
+      >
+        <option value="" disabled selected hidden>City</option>
+        <option value="male">Lagos</option>
+        <option value="female">New York</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <!-- Gender -->
+    <div class="px-3">
+      <select
+        class="w-full h-[60px] px-3 py-2 border border-gray-300 text-[#D0D0D0] bg-transparent rounded-md shadow-sm focus:outline-none"
+        id="gender"
+        required
+      >
+        <option value="" disabled selected hidden>District</option>
+        <option value="male">Ikeja</option>
+        <option value="female">Bakers</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <!-- Submit Button -->
+    <div class="flex gap-3 px-3 justify-center">
+      <button
+        type="submit"
+        class="w-[100%] h-[54px] items-center font-medium py-2 px-4 bg-white text-[#414141] border-[1px] border-[#FA0303] font-bold rounded-lg shadow-sm flex justify-center"
+      >
+        <a href="">Cancel </a>
+      </button>
+      <button
+        type="submit"
+        class="w-[100%] h-[54px] items-center font-medium py-2 px-4 bg-red-600 text-white font-bold rounded-lg shadow-sm border-[1px] border-[#FA0303] flex justify-center"
+      >
+        <a href=""> Save </a>
+      </button>
+    </div>
+  </body>
+</html>
